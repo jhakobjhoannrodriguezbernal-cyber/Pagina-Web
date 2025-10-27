@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f80101;
+}
+
+.nav-links {
+     display: flex;
+     list-style: none;
+     gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+#hero {
+    padding-top: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('imagen4.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: o 1rem;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.cta-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.cta-button:hover {
+    background-color: #f73d3d;
+}
+
+#herramientas {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#herramientas h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f80000;
+}
+
+.herramientas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(300px, 1fr));
+    gap: 2rem;
+}
+
+.herramientas-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.herramientas-card img{
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.herramientas-card h4{
+    padding: 1rem;
+    color: #333;
+}
+
+.descripcion {
+    padding: .5rem 1rem;
+    color: #000000;
+}
+
+.herramientas-card button {
+    margin: 1rem;
+    padding: .5rem 1rem;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.herramientas-card button:hover {
+    background-color: #f74646;
+}
+
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+input, textarea {
+    padding: .8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #fc0000;
+    color:white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+form button:hover {
+    background-color: #ff5555;
+}
+
+footer {
+    background-color:#f80000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px
+}
+ 
+@media screen and (max-width:430px){
+    nav {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+        gap: 1rem;
+
+    }
+}
+    
+
